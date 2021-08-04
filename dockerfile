@@ -2,10 +2,11 @@ FROM ubuntu
 RUN rm -rf /etc/localtime
 RUN ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 RUN apt-get update \
-    && apt install -y openjdk-16-jdk wget git npm \
+    && apt install -y openjdk-16-jdk  git npm \
     && git clone https://gitee.com/Suwingser/MCSManager.git \
     && cd MCSManager/ \
-    && npm install
+    && npm install \
+    && apt autoremove git -y 
 VOLUME /data
 WORKDIR /MCSManager
 EXPOSE 23333 25565
