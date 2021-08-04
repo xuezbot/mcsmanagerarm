@@ -1,5 +1,5 @@
 mcsmanager面板 arm版本
-使用方法，复制文件到你的电脑里面？
+使用方法，复制dockerfile这个文件到你的电脑里面？
 
 docker build -f  dockerfile -t test/test:111 .
 
