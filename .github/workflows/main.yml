@@ -1,5 +1,6 @@
 name: Build and Publish Docker
-   on: [push]
+   on: 
+    push:
   jobs:
      build:
        runs-on: ubuntu-latest
