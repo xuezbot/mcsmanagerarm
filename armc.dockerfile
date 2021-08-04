@@ -8,5 +8,4 @@ RUN apt-get update \
     && npm install
 VOLUME /data
 EXPOSE 23333
-EXPOSE 25565
 CMD ["npm","start"]
