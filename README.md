@@ -3,7 +3,7 @@ mcsmanager面板 arm版本
 
 docker build -f  dockerfile -t test/test:111 .
 
-等待完成
+等待完成，时间按机器性能决定的，一定要等待完成
 
 docker run -itd -p 23333:23333 -p 25565:25565 -v /data:/data test/test:111
 
