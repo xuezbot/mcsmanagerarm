@@ -7,7 +7,6 @@ RUN apt-get update \
     && cd MCSManager/ \
     && npm install
 VOLUME /data
-
 WORKDIR /MCSManager
 EXPOSE 23333 25565
 CMD ["npm","start"]
