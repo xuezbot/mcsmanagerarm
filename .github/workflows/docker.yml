@@ -6,7 +6,6 @@ on:
 env:
   APP_NAME: mcsmanager_arm
   DOCKERHUB_REPO: xuezbot/mcsmanager_arm
-
 jobs:
   main:
     
