@@ -1,8 +1,6 @@
 name: Build Docker Image
 on:
   push:
-    tags:
-      - v*
 env:
   APP_NAME: mcsmanager_arm
   DOCKERHUB_REPO: xuezbot/mcsmanager_arm
