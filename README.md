@@ -1,11 +1,9 @@
 mcsmanager面板 arm版本
-使用方法，复制dockerfile这个文件到你的电脑里面？
 
-docker build -f  dockerfile -t test/test:111 .
+https://hub.docker.com/r/xuezbot/mcsmanager_arm
 
-等待完成，时间按机器性能决定的，一定要等待完成
+docker run -itd -p 23333:23333 -p 25565:25565 -v /data:/data xuezbot/mcsmanager_arm
 
-docker run -itd -p 23333:23333 -p 25565:25565 -v /data:/data test/test:111
 
 之后在浏览器里面输入docker机器的IP:23333
 
