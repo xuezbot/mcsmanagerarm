@@ -8,6 +8,7 @@ RUN apt-get update \
     && npm install \
     && apt autoremove git -y 
 VOLUME /data
+
 WORKDIR /MCSManager
 EXPOSE 23333 25565
 CMD ["npm","start"]
