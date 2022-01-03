@@ -2,7 +2,7 @@ FROM ubuntu
 RUN rm -rf /etc/localtime
 RUN ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 RUN apt-get update \
-    && apt install -y openjdk-16-jdk  git npm \
+    && apt install -y openjdk-17-jdk  git npm \
     && git clone https://gitee.com/Suwingser/MCSManager.git \
     && cd MCSManager/ \
     && npm install \
